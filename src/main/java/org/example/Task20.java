@@ -42,6 +42,28 @@ package org.example;
     s consists of parentheses only '()[]{}'.
  */
 
-public class Task20 {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
+public class Task20 {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                char top = stack.pop();
+                if (    (c == ')' && top != '(') ||
+                        (c == '}' && top != '{') ||
+                        (c == ']' && top != '[')) {
+                    return false;
+                }
+            }
+        }
+        return stack.isEmpty();
+    }
 }
