@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 //        Task01 task01 = new Task01();
@@ -15,7 +13,12 @@ public class Main {
 //
 //        Task20 task20 = new Task20();
 //        System.out.println(task20.isValid("([])"));
-        Task03 task03 = new Task03();
-        System.out.println(task03.lengthOfLongestSubstring("pwwkew"));
+//        Task03 task03 = new Task03();
+//        System.out.println(task03.lengthOfLongestSubstring("pwwkew"));
+//        Task02 task02 = new Task02();
+//        System.out.println(task02.longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
+
+        Task26 task26 = new Task26();
+        System.out.println(task26.removeDuplicates(new int[]{-3,-1,0,0,0,3,3}));
     }
 }
