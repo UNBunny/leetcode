@@ -18,7 +18,12 @@ public class Main {
 //        Task02 task02 = new Task02();
 //        System.out.println(task02.longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
 
-        Task26 task26 = new Task26();
-        System.out.println(task26.removeDuplicates(new int[]{-3,-1,0,0,0,3,3}));
+//        Task26 task26 = new Task26();
+//        System.out.println(task26.removeDuplicates(new int[]{-3,-1,0,0,0,3,3}));
+//        Task28 task28 = new Task28();
+//        System.out.println(task28.strStr("sadbutsad", "sad"));
+        Task67 task67 = new Task67();
+        System.out.println(task67.addBinary("11", "1"));
+
     }
 }
